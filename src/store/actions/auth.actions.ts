@@ -1,10 +1,16 @@
 export const AUTH_LOGIN_TYPE = "login";
 export const AUTH_LOGOUT_TYPE = "logout";
 
-export const loginAction = ({token,host}) => {
+export const loginAction = ({
+  token,
+  host,
+}: {
+  token: string;
+  host: string;
+}) => {
   return {
     type: AUTH_LOGIN_TYPE,
-    payload:{token,host}
+    payload: { token, host },
   };
 };
 

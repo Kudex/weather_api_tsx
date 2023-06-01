@@ -7,8 +7,6 @@ import SettingsPage from "../pages/settings/Settings.page";
 import ProfilePage from "../pages/profile/Profile.page";
 import NoFound from "../pages/no-found/NoFound";
 
-
-
 export const appRoutes = {
   home: {
     id: 1,
@@ -31,6 +29,7 @@ const PrivateRoutes = () => {
   return (
     <div>
       <Nav />
+
       <ReactRouterRoutes>
         {Object.values(appRoutes).map(({ id, path, element }) => (
           <Route key={id} path={path} element={element} />

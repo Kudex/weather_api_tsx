@@ -8,7 +8,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./store/store";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import './store/axios/axios-setup';
+
+const root = ReactDOM.createRoot(document.getElementById("root") as any);
 root.render(
   <StrictMode>
     <Provider store={store}>
